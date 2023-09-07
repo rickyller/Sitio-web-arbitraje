@@ -1,0 +1,560 @@
+@font-face {
+    font-family: 'Halvar';
+    src: url('fonts/Halvar.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Halvar2';
+    src: url('fonts/Halvar2.ttf') format('truetype');
+}
+
+#titulo{
+    font-size: 3em;
+    color: rgb(37, 240, 240);
+    font-family:'Halvar',sans-serif;
+    text-align: center;
+}
+nav{
+    overflow: hidden;
+    background-color: rgb(108, 176, 154);  
+}
+#subtitulo{
+    font-size: 2em;
+    color: rgb(108, 176, 154);
+    font-family:'Halvar',sans-serif;
+    text-align: center;
+    margin-top: .9em;
+
+}
+#subtituloInicio{
+    font-size: 2em;
+    color: rgb(108, 176, 154);
+    font-family:'Halvar',sans-serif;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: .7em;
+
+}
+.subtituloMisión{
+    font-size: 2em;
+    color: rgb(108, 176, 154);
+    font-family:'Halvar',sans-serif;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: .2em;
+
+}
+body{
+    margin: 0;
+}
+.menu{
+    font-size: 1em;
+    font-family:'Halvar',sans-serif;
+    text-decoration: none;
+    display: block; 
+    color: #f5f5f5;
+    text-align: center; 
+    padding: 1.1em 1.3em; 
+    font-size: 1em; 
+    margin: 0 1em; 
+}
+
+.right{
+    text-align: right;
+    margin-right: 1em;
+    padding-top: 1em;
+}
+
+.div-2 :hover{
+    color: black;
+}
+
+.div-1{
+    background: linear-gradient(to right, rgba(65,68,77,255), rgba(5,9,21,255));
+    padding-bottom: 2em;
+    text-align: center;
+    width: 100%; 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
+}
+
+.div-2{   
+    display: flex;   
+    justify-content: center;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
+}
+
+.div-3{
+    background-color: rgb(209, 210, 210);
+    padding: 1em;
+    text-align: left;
+    margin-bottom: 1em;  
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
+}
+
+#div-infoSub{
+    background-color: rgb(108, 176, 154);
+    padding: 1.5em;
+    text-align: left;
+    margin-bottom: 0;  
+    font-family:'Halvar',sans-serif;
+}
+.div-info{
+
+    padding: .5em;
+    text-align: justify;
+    margin-bottom: 0;  
+    margin-left: 1em;
+    color: black;
+    margin-right: 1em;
+    margin-top: 0;
+    font-family:'Halvar2',sans-serif;
+}
+.div-registrarse{
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 0;  
+    color: white;
+    margin-left: -1em;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-bottom: -1em;
+    font-family: 'Halvar';
+    font-size: .8em;
+}
+
+.div-productos{
+    background-color: rgb(211, 216, 215);
+    padding: 1.5em;
+    text-align: left;
+    margin-bottom: 0;  
+}
+
+.div-ubicacion{
+    background-color: rgb(211, 216, 215);
+    padding: 1.5em;
+    text-align: left;
+    margin-bottom: 0;  
+}
+
+.texto{
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0;
+    color: #3b4348;
+    font-size: 1em;
+    font-family: 'Halvar2';
+    text-decoration:overline;
+    text-decoration:wavy;
+    font-weight: bold; 
+    text-shadow: 2px 2px #999999; 
+    letter-spacing: 2px; 
+    margin: 0; 
+    padding: 1rem; 
+    border: 2px solid rgba(65,68,77,255); 
+    border-radius: 1em; 
+    background-color: rgb(211, 216, 215);
+    text-align: center;
+}
+
+.div-footer{
+    text-decoration: none;
+    background: linear-gradient(to right, rgba(65,68,77,255), rgba(5,9,21,255));
+    margin-top: 3em;
+    font-family: sans-serif;
+    color: white;
+    font-size: 1em;
+    padding-left: .6em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    position: relative;
+    bottom: 0;
+}
+
+.mapa{
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.letralogin{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: .8em;
+}
+
+.creatu{
+text-align: center;
+margin-right: 3em;
+color: white;
+font-size: .8em;
+margin-bottom: 2em;
+}
+
+.creatu:hover{
+color: rgb(37, 240, 240);;
+}
+
+.div-login{
+    background-color: #434d53;
+    width: 10.2em;
+    margin: 0 auto;
+    border: 1em;
+    border-color: aqua;
+    padding-top: .1em;
+    padding-left: 1em;
+    padding-right: 10em;
+    padding-bottom: 3em;
+    text-align: left;
+    position: relative;
+    margin-top: 1.6em;
+    margin-bottom: 4em;
+}
+
+.left{
+right: 6em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family:'Halvar',sans-serif;
+}
+
+td {
+    padding: .9em;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    width: calc(100% / 3);
+    height: 15em;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: 12em;
+    display: block;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-top: 1em;
+    margin-bottom: .4em;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.logo{
+    position: absolute;
+    top: -4.5rem;
+    left: -2.8rem;
+    margin-left: 0;
+}
+
+.logo2{
+position:fixed;
+text-align: center;
+width:auto;
+right: 23em;
+top: 10em;
+background-repeat: no-repeat;
+background-image: url('file:///C:/Users/richi/OneDrive - Centro de Enseñanza Técnica Industrial/Cuarto semestre/Desarrollo web/Proyecto WEB/Images/logo3png.png');
+opacity: 0;
+background-size: cover;
+}
+
+
+#botones-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 3em;
+  position: relative;
+  padding-right: 3.1em;
+  cursor: pointer;
+}
+
+#botones-header img {
+  height: 3em;
+  position: absolute;
+  bottom: -.5em;
+  right: 0em;
+  padding-right: .2em;
+}
+
+
+.boton-iniciar-sesion,
+.boton-registrarse {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    font-family: 'Halvar';
+    color: white;
+    text-decoration: none;
+}
+
+.boton-iniciar-sesion:hover{
+    color: rgb(37, 240, 240);
+}
+.boton-registrarse:hover{
+    color: rgb(37, 240, 240);
+}
+
+.btn-login {
+    background-color: #4f6c7f; /* Cambia el color de fondo cuando se pasa sobre el botón */
+    border: none; /* Elimina el borde del botón */
+    color: white; /* Color del texto del botón */
+    padding: .5em 1.5em; /* Ajusta el relleno del botón */
+    text-align: center; /* Centra el texto del botón */
+    text-decoration: none; /* Elimina el subrayado del botón */
+    display: inline-block; /* Ajusta el botón al ancho del contenido */
+    font-size: .8em; /* Tamaño de fuente del botón */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa sobre el botón */
+    border-radius: .4em; /* Agrega un borde redondeado al botón */
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+
+  .btn-editar {
+    background-color: #4f6c7f; /* Cambia el color de fondo cuando se pasa sobre el botón */
+    border: none; /* Elimina el borde del botón */
+    color: white; /* Color del texto del botón */
+    padding: .5em 1.5em; /* Ajusta el relleno del botón */
+    text-align: center; /* Centra el texto del botón */
+    text-decoration: none; /* Elimina el subrayado del botón */
+    display: inline-block; /* Ajusta el botón al ancho del contenido */
+    font-size: .8em; /* Tamaño de fuente del botón */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa sobre el botón */
+    border-radius: .4em; /* Agrega un borde redondeado al botón */
+    margin-top: 1em;
+    margin-left: 56em;
+  }
+
+  
+  .btn-salir {
+    background-color: #4f6c7f; /* Cambia el color de fondo cuando se pasa sobre el botón */
+    border: none; /* Elimina el borde del botón */
+    color: white; /* Color del texto del botón */
+    padding: .5em 1.8em; /* Ajusta el relleno del botón */
+    text-align: center; /* Centra el texto del botón */
+    text-decoration: none; /* Elimina el subrayado del botón */
+    display: inline-block; /* Ajusta el botón al ancho del contenido */
+    font-size: .8em; /* Tamaño de fuente del botón */
+    cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa sobre el botón */
+    border-radius: .4em; /* Agrega un borde redondeado al botón */
+    margin-left: 65em;
+
+  }
+
+  .button-container {
+    text-align: center; /* Centra los botones horizontalmente */
+  }
+  
+  .button-container button {
+    display: inline-block; /* Coloca los botones en la misma línea */
+    margin: 0 10px; /* Agrega un margen entre los botones para separarlos */
+  }
+.btn-registro {
+  background-color: #4f6c7f;; /* Cambia el color de fondo cuando se pasa sobre el botón */
+  border: none; /* Elimina el borde del botón */
+  color: white; /* Color del texto del botón */
+  padding: .5em 1.5em; /* Ajusta el relleno del botón */
+  text-align: center; /* Centra el texto del botón */
+  text-decoration: none; /* Elimina el subrayado del botón */
+  display: inline-block; /* Ajusta el botón al ancho del contenido */
+  font-size: .8em; /* Tamaño de fuente del botón */
+  margin: 1em 0; /* Ajusta el margen del botón */
+  cursor: pointer; /* Cambia el cursor a un puntero cuando se pasa sobre el botón */
+  border-radius: .4em; /* Agrega un borde redondeado al botón */
+  margin-top: 2em;
+}
+.btn-registro:hover {
+  background-color: #4f6c7f;; /* Cambia el color de fondo cuando se pasa sobre el botón */
+  color: rgb(37, 240, 240);
+}
+.btn-login:hover {
+  background-color: #4f6c7f;; /* Cambia el color de fondo cuando se pasa sobre el botón */
+  color: rgb(37, 240, 240);
+}
+
+input[type="text"], input[type="password"], input[type="correo"], input[type="number"] textarea {
+    background-color: #4f6c7f;
+    color: rgb(37, 240, 240);
+}  
+input[type="bigint"], input[type="telefono"] textarea {
+  background-color: #4f6c7f;
+  color: rgb(37, 240, 240);
+}  
+input.my-input-class::placeholder{
+  color: #fff;
+}
+::placeholder { color: rgb(37, 240, 240); }
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Encabezado de la página */
+  .admin-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 2em;
+  }
+  
+  .admin-header h1 {
+    margin: 0;
+  }
+  
+  .admin-header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .admin-header a:hover {
+    color: rgb(37, 240, 240);
+  }
+  
+  /* Tabla de productos */
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .product-table th {
+    background-color: #555;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .product-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .product-table td img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  /* Formulario para agregar/editar productos */
+  .product-form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+  }
+  
+  .product-form h2 {
+    margin-top: 0;
+  }
+  
+  .product-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .product-form input[type="text"],
+  .product-form input[type="number"],
+  .product-form select,
+  .product-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .product-form textarea {
+    height: 100px;
+  }
+  
+  .product-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .product-form button:hover {
+    background-color: #555;
+  }
+  
+  /* Estilos para el mensaje de éxito/error */
+  .message {
+    padding: .9em;
+    border-radius: .3em;
+    margin-top: 1.8em;
+  }
+  
+  .message.success {
+    background-color: #7fbf7f;
+    color: #fff;
+  }
+  
+  .message.error {
+    background-color: #e67c7c;
+    color: #fff;
+  }
+  
+  #view-admin{
+    color: white;
+    font-family:'Halvar',sans-serif;
+    font-size: 1em;
+  }
+
+/* Estilo para el botón Agregar al carrito */
+.agregar-carrito {
+  background-color: rgb(108, 176, 154);
+  border: none;
+  color: white;
+  padding: .5em 1.2em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.2em;
+  margin: .4em .09em;
+  cursor: pointer;
+  margin-left: 7.7em;
+}
+
+.carrito-icono {
+  margin-left: auto;
+  width: 1em;
+  margin-right: 1em;
+  
+}
+
+.boton-carrito{
+  cursor: pointer;
+}
+#boton-carrito{
+  cursor: pointer;
+}
+
+.alert {
+  display: none;
+}
+
