@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="Estilos.css">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-HKdIa1VPX9JbAl5D5o5yIjKf5HY+1nGJ/jpNz+f6UZb6U9z6KjEB6UtpwJ/lwJVfLlVqxQ2TN6xWVcQatYHSSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="admin-header">
+        <h1>Panel de Administración</h1>
+
+            <ul>
+                <li><a href="file:///C:/Users/richi/OneDrive%20-%20Centro%20de%20Ense%C3%B1anza%20T%C3%A9cnica%20Industrial/Cuarto%20semestre/Desarrollo%20web/Proyecto%20WEB/Inicio-admin.html">Inicio</a></li>
+                <li><a href="file:///C:/Users/richi/OneDrive%20-%20Centro%20de%20Ense%C3%B1anza%20T%C3%A9cnica%20Industrial/Cuarto%20semestre/Desarrollo%20web/Proyecto%20WEB/Productos-admin.html">Productos</a></li>
+                <li><a href="file:///C:/Users/richi/OneDrive%20-%20Centro%20de%20Ense%C3%B1anza%20T%C3%A9cnica%20Industrial/Cuarto%20semestre/Desarrollo%20web/Proyecto%20WEB/Descripcion-admin.html">Descripción</a></li>
+                <li><a href="file:///C:/Users/richi/OneDrive%20-%20Centro%20de%20Ense%C3%B1anza%20T%C3%A9cnica%20Industrial/Cuarto%20semestre/Desarrollo%20web/Proyecto%20WEB/Ubicacion-admin.html">Ubicación</a></li>
+                <li><a href="file:///C:/Users/richi/OneDrive%20-%20Centro%20de%20Ense%C3%B1anza%20T%C3%A9cnica%20Industrial/Cuarto%20semestre/Desarrollo%20web/Proyecto%20WEB/Pagina%20arbitro%201.html">Salir</a></li>
+            </ul>
+
+    </header>
+    <main class="admin-main">
+
+        <section class="admin-section">
+
+            <div class="admin-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Usuario</th>
+                            <th>Email</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John Doe</td>
+                            <td>john.doe@gmail.com</td>
+                            <td>
+                                <a href="#" class="edit"><i class="fas fa-edit"></i> Editar</a>
+                                <a href="#" class="delete"><i class="fas fa-trash"></i> Eliminar</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jane Smith</td>
+                            <td>jane.smith@gmail.com</td>
+                            <td>
+                                <a href="#" class="edit"><i class="fas fa-edit"></i> Editar</a>
+                                <a href="#" class="delete"><i class="fas fa-trash"></i> Eliminar</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Jane Doe</td>
+                            <td>jane.doe@example.com</td>
+                            
+                            <td>
+                                <a href="#" class="edit"><i class="fas fa-edit"></i> Editar</a>
+                                <a href="#" class="delete"><i class="fas fa-trash"></i> Eliminar</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                        </table>
+                        </div>
+                        </div>
+                        </section>
+                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                        <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+                        <script>
+                        $(document).ready(function() {
+                            $('#usuarios').DataTable({
+                                "language": {
+                                    "url": "https://cdn.datatables.net/plug-ins/1.10.25/i18n/Spanish.json"
+                                }
+                            });
+                        });
+                        </script>
+                        </body>
+                        </html>
