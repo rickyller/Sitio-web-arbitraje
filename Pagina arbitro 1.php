@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-
+<?php
+session_start();
+?>
 <link rel="stylesheet" href="Estilos.css">
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <div class="div-1">
         <div class="logo">
-            <a href="Pagina%20arbitro%201.html">
+            <a href="Pagina%20arbitro%201.php">
                 <img src="Images\logo1png.png" alt="ÁrbitroZMG">
             </a>      
         </div>
         <div id="botones-header">
             <a href ="login.html" class="boton-iniciar-sesion">Iniciar sesión</a> 
             <a href ="Registro.html" class="boton-registrarse">Registro</a> 
-            <img src="Images\carrito-icono.png" alt="ÁrbitroZMG">
+            <form action="carrito.php" method="post">
+                <a href="carrito.php">
+                    <img src="Images\carrito-icono.png" alt="ÁrbitroZMG">
+                </a>
+            </form>
             </div> 
         
         <h1 id="titulo">ÁrbitroZMG</h1> 
@@ -33,10 +39,10 @@
 
     <nav>
     <div class="div-2">
-<a href ="Pagina%20arbitro%201.html" class="menu">Inicio</a>
-<a href ="Descripcion.html" class="menu">Descripción</a>
-<a href ="Productos.html" class="menu">Productos</a>
-<a href ="Ubicacion.html" class="menu">Ubicación</a> 
+<a href ="Pagina%20arbitro%201.php" class="menu">Inicio</a>
+<a href ="descripcion.php" class="menu">Descripción</a>
+<a href ="productos.php" class="menu">Productos</a>
+<a href ="ubicacion.php" class="menu">Ubicación</a> 
 
 
 </div>

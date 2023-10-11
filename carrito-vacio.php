@@ -40,7 +40,7 @@
     <div class="empty-cart">
         <h2>No hay productos en el carrito</h2>
         <p>¡Tu carrito de compras está vacío! Agrega productos para comenzar a comprar.</p>
-        <a href="productos.html">Ver productos disponibles</a>
+        <a href="productos.php">Ver productos disponibles</a>
         <div class="monkey-image">
             <img src="Images\perrito-bonito.png" alt="">
         </div>

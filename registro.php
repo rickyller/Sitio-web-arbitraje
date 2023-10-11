@@ -16,7 +16,7 @@ if (isset($_POST['nombre'], $_POST['contrasena'], $_POST['edad'], $_POST['correo
     $result = mysqli_query($con, $sql);
     
     if ($result) {
-        header("Location: Pagina%20arbitro%201.html");
+        header("Location: Pagina%20arbitro%201.php");
         exit();
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($con);

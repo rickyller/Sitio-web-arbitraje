@@ -1,15 +1,33 @@
 <?php
+session_start();
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require ('PHPMailer/PHPMailer-master/vendor/autoload.php');
+require('PHPMailer/PHPMailer-master/vendor/autoload.php');
 require('fpdf/fpdf.php');
 require('PHPMailer/PHPMailer-master/src/PHPMailer.php');
 require('PHPMailer/PHPMailer-master/src/SMTP.php');
 require('PHPMailer/PHPMailer-master/src/Exception.php');
 
-function generarPDFPedido($pedido, $pdfPath, $destinatario) {
+if (isset($_SESSION['usuario']) && isset($_SESSION[$_SESSION['usuario']])) {
+    $pedido = $_SESSION[$_SESSION['usuario']];
+    $destinatario = 'richitork10@gmail.com'; // Cambia esto al correo del destinatario
+    $usuarioID = $_SESSION['usuario']; // Obtén el ID del usuario de la sesión
+
+    $pdfPath = __DIR__ . '/temp/detalle_pedido_' . $usuarioID . '.pdf'; // Cambia esto a la ubicación donde deseas guardar el PDF
+
+    generarPDFPedido($pedido, $pdfPath, $destinatario, $usuarioID);
+
+    header("Location: confirmacion.php");
+    exit();
+} else {
+    // Si el usuario no está autenticado o no tiene productos en el carrito, redirige a la página de inicio de sesión o productos.
+    header("Location: login.php"); // Cambia esto a la página a la que quieras redirigir.
+    exit();
+}
+
+function generarPDFPedido($pedido, $pdfPath, $destinatario, $usuarioID) {
     // Crear una instancia de FPDF
     $pdf = new FPDF();
 
@@ -65,45 +83,29 @@ function generarPDFPedido($pedido, $pdfPath, $destinatario) {
     $pdf->Output('F', $pdfPath);
 
     // Envía el PDF por correo electrónico utilizando PHPMailer
-// Envía el PDF por correo electrónico utilizando PHPMailer
-$mail = new PHPMailer;
-$mail->isSMTP();
-$mail->Host = 'smtp.gmail.com'; // Cambia esto al servidor SMTP que utilices
-$mail->SMTPAuth = true;
-$mail->Username = 'arbitrozmg@gmail.com'; // Cambia esto al correo electrónico del remitente
-$mail->Password = 'fichur1t0'; // Cambia esto a la contraseña del correo del remitente
-$mail->SMTPSecure = 'tls'; // Puedes cambiar esto a 'ssl' si es necesario
-$mail->Port = 587; // Cambia esto al puerto SMTP correspondiente
+    $mail = new PHPMailer;
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com'; // Cambia esto al servidor SMTP que utilices
+    $mail->SMTPAuth = true;
+    $mail->Username = 'arbitrozmg@gmail.com'; // Cambia esto al correo electrónico del remitente
+    $mail->Password = 'cyeiteuwrkqbrif'; // Cambia esto a la contraseña del correo del remitente
+    $mail->Port = 587; // Cambia esto al puerto SMTP correspondiente
 
-$mail->setFrom('arbitrozmg@gmail.com', 'ArbitroZMG'); // Cambia esto al correo y nombre del remitente
-$mail->addAddress('richitork10@gmail.com'); // Cambia esto al correo del destinatario
+    $mail->setFrom('arbitrozmg@gmail.com', 'ArbitroZMG'); // Cambia esto al correo y nombre del remitente
+    $mail->addAddress($destinatario); // Cambia esto al correo del destinatario
 
-$mail->Subject = 'Detalle de Pedido';
-$mail->Body = 'Adjunto encontrarás el detalle de tu pedido. ¡Gracias por tu compra!';
-$mail->addAttachment($pdfPath, 'detalle_pedido.pdf'); // Adjunta el PDF generado
+    $mail->Subject = 'Detalle de Pedido';
+    $mail->Body = 'Adjunto encontrarás el detalle de tu pedido. ¡Gracias por tu compra!';
+    $mail->addAttachment($pdfPath, 'detalle_pedido_' . $usuarioID . '.pdf'); // Adjunta el PDF generado con el ID del usuario
 
-try {
-    if (!$mail->send()) {
-        echo 'Error al enviar el correo: ' . $mail->ErrorInfo;
-    } else {
-        echo 'El correo ha sido enviado exitosamente';
+    try {
+        if (!$mail->send()) {
+            echo 'Error al enviar el correo: ' . $mail->ErrorInfo;
+        } else {
+            echo 'El correo ha sido enviado exitosamente';
+        }
+    } catch (Exception $e) {
+        echo 'Error al enviar el correo: ' . $e->getMessage();
     }
-} catch (Exception $e) {
-    echo 'Error al enviar el correo: ' . $e->getMessage();
 }
-
-}
-
-// Obtén los datos del carrito de la sesión (asegúrate de que $_SESSION['carrito'] esté configurado correctamente)
-session_start();
-$pedido = $_SESSION['carrito'];
-$destinatario = 'richitork10@gmail.com'; // Cambia esto al correo del destinatario
-$pdfPath = __DIR__ . '/temp/detalle_pedido.pdf'; // Cambia esto a la ubicación donde deseas guardar el PDF
-
-// Genera el PDF y envíalo por correo electrónico
-generarPDFPedido($pedido, $pdfPath, $destinatario);
-
-header("Location: confirmacion.php");
-exit();
 ?>
-

@@ -17,7 +17,7 @@
                 <li><a href="Productos-admin.html">Productos</a></li>
                 <li><a href="Descripcion-admin.html">Descripción</a></li>
                 <li><a href="Ubicacion-admin.html">Ubicación</a></li>
-                <li><a href="Pagina%20arbitro%201.html">Salir</a></li>
+                <li><a href="Pagina%20arbitro%201.php">Salir</a></li>
             </ul>
 
     </header>
